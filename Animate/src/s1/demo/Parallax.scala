@@ -4,7 +4,6 @@ import java.awt.Color._
 import java.awt.Color
 import java.awt.BasicStroke
 import scala.util.Random
-import o1._
 import scala.math._
 
 case class Pos(x: Double, y: Double)
@@ -21,7 +20,10 @@ object Parallax extends Effect(1800, 1800) {
 
     def yCoordinate = this.currentPos.y
     def xCoordinate = this.currentPos.x
-    
+    /*
+     * The stars are supposed to go to the lower left corner so we need to 
+     * decrease the x coordinates.
+     */
     def newXCoordinate = this.xCoordinate - speed 
     def newYCoordinate(newX: Double) = {
       val r = distanceToOrigin

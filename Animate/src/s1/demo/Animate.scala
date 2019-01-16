@@ -16,7 +16,7 @@ object Animate extends SimpleSwingApplication {
   // In this list you can blace all the effects you have
   // Effects are changed when the current effect returns true from it's
   // "next"-method
-  val area = new DemoArea(Buffer(Snakes))
+  val area = new DemoArea(Buffer(Droplet, Parallax))
   
   val top = new MainFrame() {
     preferredSize = (1200, 1200)    

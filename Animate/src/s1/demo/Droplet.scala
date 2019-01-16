@@ -1,18 +1,14 @@
 package s1.demo
-import javax.imageio.ImageIO
-import java.awt.image.BufferedImage
+import java.awt.Color
 import java.awt.Image
 import java.io.File
-import s1.image.ImageExtensions._
-import s1.image.ImageExtensions._
-import java.awt.Color._
-import java.awt.Color
-import java.awt.BasicStroke
+
+import scala.collection.mutable.Buffer
+import scala.math.pow
 import scala.util.Random
-import o1._
-import scala.math._
-import java.awt.geom.Area
-import java.awt.Polygon
+
+import javax.imageio.ImageIO
+import s1.image.ImageExtensions.S1Image
 
 object Droplet extends Effect(1200, 1200) {
   var clock = 0
